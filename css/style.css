@@ -1,0 +1,472 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: rgb(43, 49, 73);
+	overflow-x: hidden;
+	position: relative;
+}
+
+
+
+.header{
+	top: 0;
+	height: 100px;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	z-index: 100;
+	background-color: white;
+	
+}
+
+.shadow{
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+	transition: all 0.5s ease-in-out;
+}
+
+.logo h1{
+	font-size: 48px;
+	text-shadow: 0px 0px 3px rgb(21, 22, 22);
+}
+
+.logo h1 a{
+	color: rgb(43, 49, 73);
+	text-decoration: none;
+}
+
+
+.navbar ul{
+	width: 500px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	font-size: 20px;
+	height: 40px;
+	align-items: flex-end;
+	list-style: none;
+}
+
+
+
+.navbar a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(18, 12, 34);
+}
+
+.navbar a:hover{
+	font-size: 24px;
+	transition: all 0.1s ease-in;
+}
+
+
+
+div.hamburger-menu {
+	width: 60px;
+	height: 36px;
+	border-radius: 2px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	cursor: pointer;
+
+}
+
+div.hamburger-menu .satu,
+div.hamburger-menu .dua,
+div.hamburger-menu .tiga {
+	width: 50px;
+	height: 6px;
+	background-color: rgb(43, 49, 73);
+	border-radius: 5px;
+	transition: all .5s ease-in-out;
+}
+
+/*animation*/
+
+div.hamburger-menu .dua.open {
+	transform: translateX(-50px);
+	background-color: transparent;
+}
+
+
+.rotasi-satu {
+	transform: rotate(45deg) translate(10px, 5px);
+}
+
+.rotasi-tiga {
+	transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/*end navbar*/
+
+/* Start jumbotron */
+
+.jumbotron{
+	padding-top: 200px;
+	height: 300px;
+	/* background-color: rgb(255, 245, 245); */
+	width: 950px;
+	margin: 20px auto;
+}
+
+
+
+.jumbotron .profile h1{
+	padding-top: 30px;
+	font-size: 20px;
+}
+
+.jumbotron .profile h3{
+	font-size: 18px;
+	color: rgb(84, 85, 90);
+	margin-bottom: 8px;
+}
+
+.jumbotron .garis{
+	margin-bottom: 5px;
+}
+
+.about-me{
+	margin-top: 40px;
+}
+
+/* end jumbotron */
+
+/* start project */
+
+.project{
+	background-color: white;
+	min-height: 1000px;
+	text-align: center;
+	padding-top: 100px;
+	width: 1400px;
+	margin: 10px auto;
+}
+
+.project h2{
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.project p{
+	color: rgb(84, 85, 90);
+	margin-bottom: 50px;
+}
+
+.main-menu{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+}
+
+.main-menu .project1,
+.main-menu .project2{
+	text-transform: uppercase;
+	padding-top: 20px;
+	height: 550px;
+	width: 550px;
+	border: 1px solid rgb(43, 49, 73);
+	background-color: rgb(49, 115, 158);
+	margin-bottom: 50px;
+	border-radius: 10px;
+	box-shadow: 0px 5px 5px black;
+}
+
+.main-menu .project3{
+	height: 450px;
+	text-transform: uppercase;
+	padding-top: 20px;
+	width: 550px;
+	border: 1px solid rgb(43, 49, 73);
+	background-color: rgb(49, 115, 158);
+	border-radius: 10px;
+	box-shadow: 0px 5px 5px black;
+}
+
+.main-menu .project1 ul,
+.main-menu .project2 ul,
+.main-menu .project3 ul{
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.image-thumb{
+	margin: 20px auto;
+	width: 530px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.image-thumb img{
+	width: 500px;
+	height: 400px;
+}
+
+.image-thumb img:hover{
+	width: 520px;
+	height: 420px;
+	transition: all 0.5s ease-out;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+#zaragoza {
+	margin: 20px auto;
+	width: 530px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.image-thumb img.zaragoza{
+	width: 500px;
+	height: 300px;
+}
+
+.image-thumb img.zaragoza:hover{
+	width: 520px;
+	height: 320px;
+	transition: all 0.5s ease-out;
+}
+
+
+.main-menu button{
+	background-color: white;
+	width: 80px;
+	height: 30px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+	
+}
+
+
+.main-menu button a{
+	text-decoration: none;
+	color: rgb(43, 49, 73);
+}
+
+.main-menu button:hover{
+	background-color: rgb(180, 241, 252);
+}
+
+/* Akhir project */
+
+/* start contact */
+.contact{
+	margin: 40px auto;
+	height: 400px;
+	text-align: center;
+	width: 950px;
+	padding-top: 100px;
+}
+
+.social-media{
+	height: 150px;
+	width: 500px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 20px;
+}
+
+.social-media i{
+	font-size: 64px;
+	cursor: pointer;
+	color: rgb(18, 12, 34);
+}
+
+.social-media i:hover{
+	font-size: 70px;
+	transition: 0.1s all ease-in;
+}
+
+/* Akhir contact */
+
+/* start footer */
+
+footer{
+	text-align: center;
+	text-transform: uppercase;
+	background-color: rgb(84, 85, 90);
+	height: 80px;
+}
+
+footer h1{
+	font-size: 24px;
+	padding-top: 30px;
+}
+
+
+
+/* Breakpoint */
+
+@media only screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	div.header {
+		position: relative;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	div.header .logo h1 {
+		margin-left: 20px;
+	}
+
+	div.navbar ul {
+		/*display: none;*/
+		background-color: white;
+		z-index: 1;
+		flex-direction: column;
+		top: 0;
+		right: 0;
+		height: 300px;
+		width: 100%;
+		position: absolute;
+		justify-content: space-around;
+		align-items: end;
+		padding-top: 50px;
+		padding-right: 20px;
+		z-index: 1;
+		transform: translateY(-1000px);
+		transition: all .5s ease-in-out;
+
+	}
+
+	div.navbar ul.tampil {
+		transform: translateX(0px);
+
+
+	}
+
+
+	div.hamburger-menu {
+		padding-right: 20px;
+		display: flex;
+		z-index: 11;
+	}
+
+	/* Akhir Navbar */
+
+	/* start jumbotron */
+
+	.jumbotron {
+		padding-top: 20px;
+		height: 200px;
+		/* background-color: rgb(255, 245, 245); */
+		width: 450px;
+		margin: 10px auto;
+	}
+	span.address{
+		display: none;
+	}
+	/* akhir jumbotron */
+
+	.project {
+		background-color: white;
+		min-height: 1000px;
+		text-align: center;
+		padding-top: 80px;
+		width: 450px;
+		margin: 20px auto;
+	}
+
+	.main-menu {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+
+	.main-menu .project1,
+	.main-menu .project2 {
+		text-transform: uppercase;
+		padding-top: 20px;
+		height: 550px;
+		width: 450px;
+		border: 1px solid black;
+		background-color: rgb(49, 115, 158);
+		margin-bottom: 50px;
+	}
+
+	.main-menu .project3 {
+		height: 400px;
+		text-transform: uppercase;
+		padding-top: 20px;
+		width: 450px;
+		border: 1px solid black;
+		background-color: rgb(49, 115, 158);
+	}
+
+
+	.image-thumb {
+		margin: 20px auto;
+		width: 400px;
+		height: 400px;
+		overflow: hidden;
+	}
+
+	.image-thumb img {
+		width: 400px;
+		height: 400px;
+	}
+
+	.image-thumb img:hover {
+		width: 420px;
+		height: 420px;
+		transition: all 0.5s ease-out;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+	}
+
+	#zaragoza {
+		margin: 20px auto;
+		width: 400px;
+		height: 250px;
+		overflow: hidden;
+	}
+
+	.image-thumb img.zaragoza {
+		width: 400px;
+		height: 220px;
+		transition: all 0.5s ease-out;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+	}
+
+	.image-thumb img.zaragoza:hover{
+		width: 420px;
+		height: 240px;
+	}
+
+	.contact {
+		margin: 40px auto;
+		height: 300px;
+		text-align: center;
+		width: 450px;
+		padding: 10px;
+	}
+
+	.social-media {
+		height: 150px;
+		width: 400px;
+		margin: 20px auto;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 20px;
+	}
+
+	/* akhir contact */
+}
